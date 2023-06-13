@@ -14,6 +14,8 @@ The Assembly AI API Key can be found at https://www.assemblyai.com/app/account
 
 The Supabase public key can be found at https://supabase.com/dashboard/project/dyjmrswsrewafrohnfcv/settings/api
 
+*Note: the ```STATION_ID``` is set to 1 for WNYC FM (see the ```stations``` table)*
+
 #### Install the dependencies
 
 ```bash
@@ -22,8 +24,8 @@ npm install
 
 #### Start the server
 
-Note: ```ffmpeg``` must be installed on the server (or on your local machine)!
-
 ```bash
 node index.js
 ```
+
+*Note: ```ffmpeg``` must be installed on the server or on your local machine!*

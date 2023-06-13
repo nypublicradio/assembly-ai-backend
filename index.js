@@ -13,7 +13,7 @@ const insertTranscript = async ( transcriptData ) => {
     } = await supabase
         .from( 'transcripts' )
         .insert( [ {
-            show_id: 1,
+            station_id: process.env.STATION_ID,
             transcript: {
                 "text": transcriptData.text,
                 "created": transcriptData.created,
@@ -36,7 +36,7 @@ const updatePartialTranscript = async ( transcriptData ) => {
         .update( {
             current_partial_transcript: transcriptData.text
         } )
-        .eq( 'show_id', 1 )
+        .eq( 'station_id', process.env.STATION_ID )
     if ( error ) {
         console.log( 'updatePartialTranscript error', error );
     }
