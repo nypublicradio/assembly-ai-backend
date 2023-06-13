@@ -22,6 +22,8 @@ npm install
 
 #### Start the server
 
+Note: ```ffmpeg``` must be installed on the server (or on your local machine)!
+
 ```bash
 node index.js
 ```
